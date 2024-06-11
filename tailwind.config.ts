@@ -1,3 +1,4 @@
+import { Comfortaa } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +9,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        "xs": "320px",
+      },
+      fontFamily: {
+        comfortaa: ["Comfortaa", "sans-serif"],
+        georgia: ["Georgia", "serif"],
+        xxx: ["xxx", "sans-serif"],
+        sss: ["sss", "serif"],
+      },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
     },
   },
