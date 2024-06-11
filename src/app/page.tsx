@@ -5,11 +5,11 @@ import Formik from "@/components/Formik";
 
 export default function Home() {
   return (
-   <>
-    <MainPage />
-    <MainContent />
-    <Info />
-    <Formik />
-   </>
+    <>
+      <MainPage />
+      <MainContent />
+      <Info />
+      <Formik />
+    </>
   );
 }

@@ -2,19 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'xxx';
-  src: url('/src/fonts/xxx.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sss';
-  src: url('/src/fonts/2.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "xxx";
+  src: url("/fonts/xxx.ttf") format("truetype");
 }
 
 body {

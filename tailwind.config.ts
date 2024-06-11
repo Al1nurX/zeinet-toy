@@ -1,4 +1,3 @@
-import { Comfortaa } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,21 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "xs": "320px",
+        xs: "320px",
       },
       fontFamily: {
         comfortaa: ["Comfortaa", "sans-serif"],
         georgia: ["Georgia", "serif"],
         xxx: ["xxx", "sans-serif"],
-        sss: ["sss", "serif"],
       },
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
+        "spin-slow": "spin 10s linear infinite",
+        'spin-slowly': 'spin-slow 10s linear infinite',
       },
       keyframes: {
         spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        'spin-slow': {
           '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
         },
       },
     },
