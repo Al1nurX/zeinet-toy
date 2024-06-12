@@ -93,7 +93,9 @@ export default function Formik() {
               </label>
             </div>
             {error && (
-              <div className="mt-3 w-full text-left text-red-500">{error}</div>
+              <div className="mt-3 w-full max-w-[85%] text-left text-red-500">
+                {error}
+              </div>
             )}
             <button
               type="submit"

@@ -25,7 +25,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="relative flex h-dvh w-screen flex-col items-center justify-center bg-[url('/main-bg.jpg')] bg-cover bg-center bg-no-repeat font-xxx">
+    <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-[url('/main-bg.jpg')] bg-cover bg-center bg-no-repeat font-xxx">
       <div className="mb-28 flex flex-col items-center gap-14">
         <div className="text-6xl font-bold text-[#9F751C]">Назира</div>
         <div className="text-4xl text-[#A27821]">Қыз ұзату</div>
