@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import BootstrapCarousel from "./BootstrapCarousel";
 
 export default function MainContent() {
   useEffect(() => {
@@ -11,10 +12,11 @@ export default function MainContent() {
   }, []);
 
   return (
-    <div className="my-10 flex flex-col items-center justify-center text-center">
+    <div className="mb-10 mt-12 flex flex-col items-center justify-center text-center">
+      <BootstrapCarousel />
       <div
         data-aos="fade-up"
-        className="mb-8 text-center font-xxx text-xl leading-loose text-[#98761A]"
+        className="my-8 text-center font-xxx text-xl leading-loose text-[#98761A]"
       >
         Шаңырақтың шаттығысың, шырағы, <br /> Текті жердің тұяғысың, ақ гүлі.{" "}
         <br /> Мың жыл құда болуға да атты күн, <br /> Екі жасқа құдай берсін
@@ -91,7 +93,7 @@ export default function MainContent() {
           alt="background"
           width={100}
           height={100}
-          className="relative bottom-3 mx-auto"
+          className="relative bottom-1 mx-auto"
         />
         <Image
           data-aos="zoom-in"
@@ -113,7 +115,7 @@ export default function MainContent() {
           alt="background"
           width={100}
           height={100}
-          className="relative bottom-1 mx-auto"
+          className="relative bottom-3 mx-auto"
         />
         <div className="absolute left-[50%] h-full border-[0.5px] border-[#98761A]"></div>
         <div className="absolute left-[47.5%] top-[10%] h-4 w-4 rounded-[50%] bg-[#CC9B33]"></div>

@@ -58,7 +58,7 @@ export default function Formik() {
             <div className="mt-3 w-full max-w-[85%] text-left text-lg">
               Тойға келесіз бе?
             </div>
-            <div className="mt-3 flex w-full max-w-[85%] items-center justify-start">
+            <div className="mt-4 flex w-full max-w-[85%] items-center justify-start">
               <input
                 type="radio"
                 id="willAttend"
@@ -75,7 +75,7 @@ export default function Formik() {
                 ӘРИНЕ, КЕЛЕМІН
               </label>
             </div>
-            <div className="mt-3 flex w-full max-w-[85%] items-center justify-start">
+            <div className="mt-4 flex w-full max-w-[85%] items-center justify-start">
               <input
                 type="radio"
                 id="cannotAttend"
@@ -93,13 +93,13 @@ export default function Formik() {
               </label>
             </div>
             {error && (
-              <div className="mt-3 w-full max-w-[85%] text-left text-red-500">
+              <div className="mt-4 w-full max-w-[85%] text-left text-red-500">
                 {error}
               </div>
             )}
             <button
               type="submit"
-              className="mt-4 h-10 w-full max-w-[85%] rounded-3xl bg-[#98761A] px-6 text-lg text-[#FFFFFF] drop-shadow-lg"
+              className="mt-6 h-10 w-full max-w-[85%] rounded-3xl bg-[#98761A] px-6 text-lg text-[#FFFFFF] drop-shadow-lg"
               disabled={isLoading}
             >
               {isLoading ? "Жіберілуде..." : "Жіберу"}
@@ -107,7 +107,7 @@ export default function Formik() {
           </div>
         </div>
       </form>
-      <div className="my-10 flex flex-col text-center font-xxx text-2xl leading-relaxed text-[#090909]">
+      <div className="mb-10 mt-16 flex flex-col text-center font-xxx text-2xl leading-relaxed text-[#090909]">
         Келіңіздер, <br /> салтанатты тоймыздың қадірлі <br /> қонағы
         болыңыздар!
       </div>

@@ -46,23 +46,31 @@ export default function Info() {
   return (
     <div className="flex flex-col items-center justify-center">
       <Image
+        data-aos="fade-up"
         src="/decor.png"
         alt="decor"
         width={200}
         height={200}
         className="mx-auto w-[70%] -rotate-6"
       />
-      <div className="my-4 font-xxx text-3xl text-[#846718]">
+      <div data-aos="fade-up" className="my-4 font-xxx text-3xl text-[#846718]">
         Мекен-жайымыз:
       </div>
-      <div className="mb-12 text-center font-georgia text-[22px] uppercase leading-relaxed">
+      <div
+        data-aos="fade-up"
+        className="mb-12 text-center font-georgia text-[22px] uppercase leading-relaxed"
+      >
         Шонжы ауылы, <br /> &quot;Хан тәңірі&quot; <br /> мейрамханасы
       </div>
-      <div className="mb-4 text-center font-georgia text-[19px] uppercase leading-relaxed">
+      <div
+        data-aos="fade-up"
+        className="mb-4 text-center font-georgia text-[19px] uppercase leading-relaxed"
+      >
         Сізге жетуге ыңғайлы <br /> болу үшін картаны басыңыз!
       </div>
       <a href="https://go.2gis.com/dozyf">
         <Image
+          data-aos="fade-up"
           src="/2gis.jpeg"
           alt="2gis"
           width={60}
@@ -70,21 +78,33 @@ export default function Info() {
           className="mb-12 rounded-2xl"
         />
       </a>
-      <div className="mb-4 font-xxx text-3xl text-[#846718]">Той иелері:</div>
-      <div className="mb-2 font-xxx text-[30px] text-[#000000]">
+      <div data-aos="fade-up" className="mb-4 font-xxx text-3xl text-[#846718]">
+        Той иелері:
+      </div>
+      <div
+        data-aos="fade-up"
+        className="mb-2 font-xxx text-[30px] text-[#000000]"
+      >
         Сейсенғали & Назым
       </div>
       <Image
+        data-aos="fade-up"
         src="/decor.png"
         alt="decor"
         width={200}
         height={200}
         className="mx-auto w-[70%] -rotate-6"
       />
-      <div className="mb-4 mt-[-5px] font-xxx text-3xl text-[#846718]">
+      <div
+        data-aos="fade-up"
+        className="mb-4 mt-[-5px] font-xxx text-3xl text-[#846718]"
+      >
         Дресс-код:
       </div>
-      <div className="mb-10 flex items-center justify-center gap-16 font-georgia">
+      <div
+        data-aos="fade-up"
+        className="mb-10 flex items-center justify-center gap-16 font-georgia"
+      >
         <div className="flex flex-col text-center">
           <Image
             src="/men.png"
@@ -136,6 +156,7 @@ export default function Info() {
         </div>
       </div>
       <Image
+        data-aos="zoom-out"
         src="/decor.png"
         alt="decor"
         width={200}
