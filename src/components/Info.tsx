@@ -156,7 +156,6 @@ export default function Info() {
         </div>
       </div>
       <Image
-        data-aos="zoom-out"
         src="/decor.png"
         alt="decor"
         width={200}
