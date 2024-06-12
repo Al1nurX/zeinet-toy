@@ -57,7 +57,7 @@ const BootstrapCarousel: React.FC = () => {
       <div className="carousel-inner h-full rounded-2xl">
         <div className="carousel-item active h-full">
           <Image
-            src="/nazira-1.JPG"
+            src="/nazira-1.png"
             className="d-block h-full w-full"
             alt="Wild Landscape"
             layout="fill"
@@ -66,7 +66,7 @@ const BootstrapCarousel: React.FC = () => {
         </div>
         <div className="carousel-item h-full">
           <Image
-            src="/nazira-2.JPG"
+            src="/nazira-2.png"
             className="d-block h-full w-full"
             alt="Camera"
             layout="fill"
@@ -75,7 +75,7 @@ const BootstrapCarousel: React.FC = () => {
         </div>
         <div className="carousel-item h-full">
           <Image
-            src="/nazira-3.JPG"
+            src="/nazira-3.jpg"
             className="d-block h-full w-full"
             alt="Exotic Fruits"
             layout="fill"
