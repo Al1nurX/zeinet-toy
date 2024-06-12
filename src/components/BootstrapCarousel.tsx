@@ -59,7 +59,7 @@ const BootstrapCarousel: React.FC = () => {
           <Image
             src="/nazira-1.png"
             className="d-block h-full w-full"
-            alt="Wild Landscape"
+            alt="Nazira"
             layout="fill"
             objectFit="cover"
           />
@@ -68,7 +68,7 @@ const BootstrapCarousel: React.FC = () => {
           <Image
             src="/nazira-2.png"
             className="d-block h-full w-full"
-            alt="Camera"
+            alt="Nazira"
             layout="fill"
             objectFit="cover"
           />
@@ -77,7 +77,7 @@ const BootstrapCarousel: React.FC = () => {
           <Image
             src="/nazira-3.jpg"
             className="d-block h-full w-full"
-            alt="Exotic Fruits"
+            alt="Nazira"
             layout="fill"
             objectFit="cover"
           />
