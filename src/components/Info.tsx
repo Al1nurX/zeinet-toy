@@ -68,16 +68,14 @@ export default function Info() {
       >
         Сізге жетуге ыңғайлы <br /> болу үшін картаны басыңыз!
       </div>
-      <a href="https://go.2gis.com/dozyf">
-        <Image
-          data-aos="fade-up"
-          src="/2gis.jpeg"
-          alt="2gis"
-          width={60}
-          height={60}
-          className="mb-12 rounded-2xl"
-        />
-      </a>
+      <Image
+        data-aos="fade-up"
+        src="/2gis.jpeg"
+        alt="2gis"
+        width={60}
+        height={60}
+        className="mb-12 rounded-2xl"
+      />
       <div data-aos="fade-up" className="mb-4 font-xxx text-3xl text-[#846718]">
         Той иелері:
       </div>
