@@ -53,14 +53,15 @@ export default function Info() {
         height={200}
         className="mx-auto w-[70%] -rotate-6"
       />
-      <div data-aos="fade-up" className="my-4 font-xxx text-3xl text-[#846718]">
+      <div data-aos="fade-up" className="my-4 font-xxx text-3xl text-[#556B2F]">
         Мекен-жайымыз:
       </div>
       <div
         data-aos="fade-up"
-        className="mb-12 text-center font-georgia text-[22px] uppercase leading-relaxed"
+        className="mb-12 text-center font-georgia text-[20px] uppercase leading-relaxed"
       >
-        Шонжы ауылы, <br /> &quot;Хан тәңірі&quot; <br /> мейрамханасы
+        Тараз қаласы, <br /> &quot;Greid shyryn&quot; <br /> мейрамханасы,{" "}
+        <br /> Жамбыл даңғылы 52
       </div>
       <div
         data-aos="fade-up"
@@ -68,25 +69,27 @@ export default function Info() {
       >
         Сізге жетуге ыңғайлы <br /> болу үшін картаны басыңыз!
       </div>
-      <Image
-        data-aos="fade-up"
-        src="/2gis.jpeg"
-        alt="2gis"
-        width={60}
-        height={60}
-        className="mb-12 rounded-2xl"
-      />
-      <div data-aos="fade-up" className="mb-4 font-xxx text-3xl text-[#846718]">
+      <a href="https://go.2gis.com/tvl3k">
+        <Image
+          data-aos="fade-up"
+          src="/2gis.jpeg"
+          alt="2gis"
+          width={60}
+          height={60}
+          className="mb-12 rounded-2xl"
+        />
+      </a>
+      <div data-aos="fade-up" className="mb-4 font-xxx text-3xl text-[#556B2F]">
         Той иелері:
       </div>
       <div
         data-aos="fade-up"
-        className="mb-2 font-xxx text-[30px] text-[#000000]"
+        className="mb-2 text-center font-xxx text-[30px] text-[#000000]"
       >
-        Сейсенғали & Назым
+        баласы Олжас <br /> & <br /> келіні Ақерке
       </div>
       <Image
-        data-aos="fade-up"
+        data-aos="flip-up"
         src="/decor.png"
         alt="decor"
         width={200}
@@ -94,14 +97,14 @@ export default function Info() {
         className="mx-auto w-[70%] -rotate-6"
       />
       <div
-        data-aos="fade-up"
-        className="mb-4 mt-[-5px] font-xxx text-3xl text-[#846718]"
+        data-aos="flip-up"
+        className="mb-4 mt-[-5px] font-xxx text-3xl text-[#556B2F]"
       >
         Дресс-код:
       </div>
       <div
-        data-aos="fade-up"
-        className="mb-10 flex items-center justify-center gap-16 font-georgia"
+        data-aos="flip-up"
+        className="flex items-center justify-center gap-16 font-georgia"
       >
         <div className="flex flex-col text-center">
           <Image
@@ -125,31 +128,6 @@ export default function Info() {
           />
           <div className="text-[17px] uppercase">
             Әйелдер <br /> қауымы
-          </div>
-        </div>
-      </div>
-      <div className="relative flex h-[70vh] w-full justify-center bg-[url('/shanyraq.webp')] bg-cover bg-center bg-no-repeat">
-        <div className="flex flex-col items-center pt-20 text-center">
-          <div className="mb-6 font-xxx text-2xl text-[#FCF7F7]">
-            Той салтанатына дейін:
-          </div>
-          <div className="flex space-x-10 font-comfortaa text-[#FFFFFF]">
-            <div className="flex flex-col items-center">
-              <div className="text-4xl">{timeLeft.days}</div>
-              <div className="text-md text-[#FCF7F7]">күн</div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="text-4xl">{timeLeft.hours}</div>
-              <div className="text-md text-[#FCF7F7]">сағат</div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="text-4xl">{timeLeft.minutes}</div>
-              <div className="text-md text-[#FCF7F7]">минут</div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="text-4xl">{timeLeft.seconds}</div>
-              <div className="text-md text-[#FCF7F7]">секунд</div>
-            </div>
           </div>
         </div>
       </div>

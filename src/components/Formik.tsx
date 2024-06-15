@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import axios from "axios";
 
 export default function Formik() {
   const [attendance, setAttendance] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [isLoading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -15,26 +17,30 @@ export default function Formik() {
       return;
     }
     setError("");
-    const formEle = e.currentTarget;
-    const formData = new FormData(formEle);
+    setSuccessMessage("");
 
-    formData.append("attendance", attendance);
+    const payload = new URLSearchParams();
+    payload.append("name", name);
+    payload.append("attendance", attendance);
 
     setLoading(true);
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwZiu-tfU5aJzVPpjiJgPDi4cbMEHiIv2fFezWIueP2PJyvFOEQngDe4OzcTk2r1YSTZw/exec",
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbwnnM_M-zwvwlNhaBHanHRPD_BHRzEXKybNXhJ-edNsW9nZGQOAK5kO-Ou6wKgz7YVoMg/exec",
+        payload,
         {
-          method: "POST",
-          body: formData,
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
         },
       );
-      const data = await response.json();
+      setSuccessMessage("Сіздің хабарламаңыз сәтті жіберілді!");
       setAttendance("");
       setName("");
       setLoading(false);
     } catch (error) {
       console.error("Error submitting form:", error);
+      setError("Бір қателік орын алды.");
       setLoading(false);
     }
   };
@@ -43,13 +49,13 @@ export default function Formik() {
     <>
       <form onSubmit={handleSubmit} className="mx-auto w-full max-w-md px-4">
         <div className="flex flex-col text-center font-georgia">
-          <div className="mb-4 mt-3 text-xl uppercase text-[#98761A]">
+          <div className="mb-4 mt-3 text-xl uppercase text-[#556B2F]">
             тойға келетініңізді <br /> растауыңызды <br /> сұраймыз!
           </div>
           <div className="mt-2 flex flex-col items-center">
             <input
               type="text"
-              name="Name"
+              name="name"
               value={name}
               placeholder="Есіміңіз"
               onChange={(e) => setName(e.target.value)}
@@ -97,9 +103,14 @@ export default function Formik() {
                 {error}
               </div>
             )}
+            {successMessage && (
+              <div className="mt-3 w-full max-w-[85%] text-left text-green-500">
+                {successMessage}
+              </div>
+            )}
             <button
               type="submit"
-              className="mt-8 h-10 w-full max-w-[85%] rounded-3xl bg-[#98761A] px-2 text-lg text-[#FFFFFF] drop-shadow-lg"
+              className="mt-8 h-10 w-full max-w-[85%] rounded-3xl bg-[#556B2F] px-2 text-lg text-[#FFFFFF] drop-shadow-lg"
               disabled={isLoading}
             >
               {isLoading ? "Жіберілуде..." : "Жіберу"}
@@ -108,7 +119,7 @@ export default function Formik() {
         </div>
       </form>
       <div className="mb-10 mt-16 flex flex-col text-center font-xxx text-2xl leading-relaxed text-[#090909]">
-        Келіңіздер, <br /> салтанатты тоймыздың қадірлі <br /> қонағы
+        Келіңіздер, салтанатты <br /> тоймыздың қадірлі <br /> қонағы
         болыңыздар!
       </div>
     </>

@@ -25,10 +25,10 @@ export default function MainPage() {
   };
 
   return (
-    <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-[url('/main-bg.jpg')] bg-cover bg-center bg-no-repeat font-xxx">
-      <div className="mb-28 flex flex-col items-center gap-14">
-        <div className="text-6xl font-bold text-[#9F751C]">Назира</div>
-        <div className="text-4xl text-[#A27821]">Қыз ұзату</div>
+    <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-[url('/bg-all.png')] bg-cover bg-no-repeat font-xxx">
+      <div className="mt-28 flex flex-col items-center gap-12">
+        <div className="text-5xl font-bold text-[#556B2F]">Гүлғайша</div>
+        <div className="text-3xl text-[#556B2F]">Зейнет той</div>
       </div>
       <div className="absolute bottom-5">
         <div className="relative flex items-center justify-center">
@@ -54,9 +54,9 @@ export default function MainPage() {
           </button>
         </div>
         <div className="relative mb-5 mt-[-30px] flex rotate-90 items-center justify-center">
-          <div className="h-36 border-[0.5px] border-[#CC9B33]"></div>
-          <div className="absolute h-3 w-3 rounded-[50%] bg-[#CC9B33]"></div>
-          <div className="absolute left-8 -rotate-90 text-2xl text-[#CC9B33]">
+          <div className="h-36 border-[0.5px] border-[#556B2F]"></div>
+          <div className="absolute h-3 w-3 rounded-[50%] bg-[#556B2F]"></div>
+          <div className="absolute left-8 -rotate-90 text-2xl text-[#556B2F]">
             03/08/2024
           </div>
         </div>
